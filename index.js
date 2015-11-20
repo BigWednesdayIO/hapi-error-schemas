@@ -13,6 +13,7 @@ const statusErrors = {
   401: errorSchema.description('Unauthorized'),
   403: errorSchema.description('Forbidden'),
   404: errorSchema.description('Not found'),
+  409: errorSchema.description('Conflict'),
   500: errorSchema.description('Internal error')
 };
 

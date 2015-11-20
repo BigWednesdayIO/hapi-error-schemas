@@ -47,6 +47,10 @@ describe('statuses', () => {
     expect(errorSchemas.statuses([404])['404']).to.eql(errorSchemas.schema.description('Not found'));
   });
 
+  it('supports 409 status', () => {
+    expect(errorSchemas.statuses([409])['409']).to.eql(errorSchemas.schema.description('Conflict'));
+  });
+
   it('supports 500 status', () => {
     expect(errorSchemas.statuses()[500]).to.eql(errorSchemas.schema.description('Internal error'));
   });
