@@ -11,6 +11,7 @@ const errorSchema = joi.object({
 const statusErrors = {
   400: errorSchema.description('Bad request'),
   401: errorSchema.description('Unauthorized'),
+  403: errorSchema.description('Forbidden'),
   404: errorSchema.description('Not found'),
   500: errorSchema.description('Internal error')
 };

@@ -3,8 +3,9 @@
 Currently supports the following http error statuses:
   - 400
   - 401
+  - 403
   - 404
-  - 404
+  - 500
 
 ## Usage
 

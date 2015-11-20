@@ -39,6 +39,10 @@ describe('statuses', () => {
     expect(errorSchemas.statuses([401])['401']).to.eql(errorSchemas.schema.description('Unauthorized'));
   });
 
+  it('supports 403 status', () => {
+    expect(errorSchemas.statuses([403])['403']).to.eql(errorSchemas.schema.description('Forbidden'));
+  });
+
   it('supports 404 status', () => {
     expect(errorSchemas.statuses([404])['404']).to.eql(errorSchemas.schema.description('Not found'));
   });
