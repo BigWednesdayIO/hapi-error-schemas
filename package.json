@@ -1,6 +1,6 @@
 {
   "name": "hapi-error-schemas",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "Exposes error response schemas for hapi api server",
   "main": "index.js",
   "scripts": {
