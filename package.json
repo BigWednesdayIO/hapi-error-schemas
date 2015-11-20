@@ -1,0 +1,43 @@
+{
+  "name": "hapi-error-schemas",
+  "version": "1.0.0",
+  "description": "Exposes error response schemas for hapi api server",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint .",
+    "test": "mocha",
+    "watch": "chokidar './*.js' './test/*.js' -c 'npm run lint && npm run test'",
+    "retire": "retire --node"
+  },
+  "engines": {
+    "node": ">=4.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BigWednesdayIO/hapi-error-schemas.git"
+  },
+  "keywords": [
+    "hapi",
+    "errors",
+    "validation"
+  ],
+  "author": "Big Wednesday IO <info@bigwednesday.io>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/BigWednesdayIO/hapi-error-schemas/issues"
+  },
+  "homepage": "https://github.com/BigWednesdayIO/hapi-error-schemas#readme",
+  "devDependencies": {
+    "babel-eslint": "^4.1.4",
+    "chai": "^3.4.1",
+    "chokidar-cli": "^1.1.1",
+    "eslint": "^1.9.0",
+    "eslint-config-xo-space": "^0.6.1",
+    "eslint-plugin-babel": "^2.1.1",
+    "mocha": "^2.3.3",
+    "retire": "^1.1.1"
+  },
+  "dependencies": {
+    "joi": "^7.0.0"
+  }
+}
